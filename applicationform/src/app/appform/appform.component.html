@@ -1,0 +1,50 @@
+<div class="container">
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+        <table>
+            <h2>Basic Details Application Form</h2>
+            <tr>
+
+                <div>
+                    <label>Full Name</label>
+                    <input class="form-control" #username="ngModel" required type="text" name="username" ngModel>
+                    <span *ngIf="username.invalid && username.touched" class="red">Username is required!</span>
+                </div><br>
+            </tr>
+            <tr>
+                <div>
+                    <label>Email</label>
+                    <input class="form-control" #email="ngModel" required type="text" name="email" ngModel
+                        inputmode="email">
+                    <span *ngIf="email.invalid && email.touched" class="red">Email is required!</span>
+                </div><br>
+            </tr>
+            <tr>
+                <div>
+                    <label>Address</label>
+                    <input class="form-control" #address="ngModel" required type="text" name="address" ngModel>
+                    <span *ngIf="address.invalid && address.touched" class="red">Address is required!</span>
+                </div><br>
+            </tr>
+            <tr>
+                <div>
+                    <label>Contact No</label>
+                    <input class="form-control" #contactNo="ngModel" required type="text" name="contactNo" ngModel
+                        inputmode="numeric">
+                    <span *ngIf="contactNo.invalid && contactNo.touched" class="red">Contact No is required!</span>
+                </div><br>
+            </tr>
+            <tr>
+                <div>
+                    <label>Any Comment</label>
+                    <input class="form-control" #comment="ngModel" required type="text" name="comment" ngModel>
+                    <span *ngIf="comment.invalid && comment.touched" class="red">Comment is required to make
+                        better!</span>
+                </div><br>
+            </tr>
+
+            <tr>
+                <button class="form-control btn btn-success" [disabled]="!userForm.valid" type="submit">Submit</button>
+            </tr>
+        </table>
+    </form>
+</div>

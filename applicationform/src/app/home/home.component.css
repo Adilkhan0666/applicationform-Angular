@@ -1,0 +1,102 @@
+body {
+    background-color: #f6f8f8;
+  }
+  /* Heartbeat Animation */
+  
+  @-webkit-keyframes thumb {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+  
+  .heartbeat:hover {
+    -webkit-animation-name: thumb;
+    -webkit-animation-duration: 200ms;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-timing-function: linear;
+  }
+  /* end Heartbeat Animation */
+  /* Wiggle Animation */
+  
+  @keyframes wiggle {
+    30% {
+      transform: rotate( -5deg);
+    }
+    60% {
+      transform: rotate( 5deg);
+    }
+    100% {
+      transform: rotate( 0deg);
+    }
+  }
+  
+  .wiggle:hover {
+    -webkit-animation-name: wiggle;
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-count: 1;
+    -webkit-animation-function: ease-in-out;
+  }
+  /* end Wiggle Animation */
+  /* Shadow Animation */
+  
+  @keyframes shadow {
+    12% {
+      box-shadow: 15px 15px 100px #ccc;
+    }
+    24% {
+      box-shadow: 15px 0px 86px #ccc;
+    }
+    38% {
+      box-shadow: 0px -13px 74px #ccc;
+    }
+    50% {
+      box-shadow: -12px -12px 62px #ccc;
+    }
+    62% {
+      box-shadow: -11px 0px 50px #ccc;
+    }
+    74% {
+      box-shadow: -10px 10px 38px #ccc;
+    }
+    86% {
+      box-shadow: 0px 10px 24px #ccc;
+    }
+    100% {
+      box-shadow: 0px 0px 12px #ccc;
+    }
+  }
+  
+  .shadow:hover {
+    -webkit-animation-name: shadow;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-count: 1;
+    -webkit-animation-function: ease-in-out;
+  }
+  /* end Shadow Animation */
+  
+  .container {
+    padding: 1em;
+  }
+  
+  .card {
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px #ccc;
+    width: 250px;
+    height: 250px;
+    transition: all ease-in-out 0.7s;
+  }
+  
+  .card:hover {
+    box-shadow: 3px 4px 8px #ccc;
+  }

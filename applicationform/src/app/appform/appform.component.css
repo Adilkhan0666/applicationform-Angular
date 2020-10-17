@@ -1,0 +1,25 @@
+input.ng-invalid{
+    border-left: 5px solid red;
+}
+input.ng-valid{
+    border-left: 5px solid green;
+}
+span.red{
+    color: red;
+}
+label{
+    font-size: large;
+    font-weight: 500;
+    border-left: 1px solid gray;
+    border-bottom:2px solid gray;
+    padding-left: 5px;
+}
+
+table{
+    width: 400px;
+}
+h2{
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-style: dotted;
+}
