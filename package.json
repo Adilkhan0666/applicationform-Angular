@@ -13,8 +13,8 @@
     "postinstall": "ng build --aot -prod"
   },
   "engines": {
-    "node": "6.11.0",
-    "npm": "3.10.10"
+    "node": "12.18.4",
+    "npm": "6.14.6"
   },
   "private": true,
   "dependencies": {
@@ -32,7 +32,8 @@
     "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "typescript": "~4.0.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1001.4",
@@ -52,6 +53,5 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
   }
 }
